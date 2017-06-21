@@ -1,0 +1,11 @@
+C:\Users\chengyi.tan\Desktop\Develop\myGitHub\TemplateOfNetCoreWebApi\TemplateOfNetCoreWebApi\bin\Debug\netcoreapp1.1\TemplateOfNetCoreWebApi.deps.json
+C:\Users\chengyi.tan\Desktop\Develop\myGitHub\TemplateOfNetCoreWebApi\TemplateOfNetCoreWebApi\bin\Debug\netcoreapp1.1\TemplateOfNetCoreWebApi.runtimeconfig.json
+C:\Users\chengyi.tan\Desktop\Develop\myGitHub\TemplateOfNetCoreWebApi\TemplateOfNetCoreWebApi\bin\Debug\netcoreapp1.1\TemplateOfNetCoreWebApi.runtimeconfig.dev.json
+C:\Users\chengyi.tan\Desktop\Develop\myGitHub\TemplateOfNetCoreWebApi\TemplateOfNetCoreWebApi\bin\Debug\netcoreapp1.1\TemplateOfNetCoreWebApi.dll
+C:\Users\chengyi.tan\Desktop\Develop\myGitHub\TemplateOfNetCoreWebApi\TemplateOfNetCoreWebApi\bin\Debug\netcoreapp1.1\TemplateOfNetCoreWebApi.pdb
+C:\Users\chengyi.tan\Desktop\Develop\myGitHub\TemplateOfNetCoreWebApi\TemplateOfNetCoreWebApi\obj\Debug\netcoreapp1.1\TemplateOfNetCoreWebApi.AssemblyInfo.cs
+C:\Users\chengyi.tan\Desktop\Develop\myGitHub\TemplateOfNetCoreWebApi\TemplateOfNetCoreWebApi\obj\Debug\netcoreapp1.1\TemplateOfNetCoreWebApi.dll
+C:\Users\chengyi.tan\Desktop\Develop\myGitHub\TemplateOfNetCoreWebApi\TemplateOfNetCoreWebApi\obj\Debug\netcoreapp1.1\TemplateOfNetCoreWebApi.pdb
+C:\Users\chengyi.tan\Desktop\Develop\myGitHub\TemplateOfNetCoreWebApi\TemplateOfNetCoreWebApi\obj\Debug\netcoreapp1.1\TemplateOfNetCoreWebApi.csprojResolveAssemblyReference.cache
+C:\Users\chengyi.tan\Desktop\Develop\myGitHub\TemplateOfNetCoreWebApi\TemplateOfNetCoreWebApi\bin\Debug\netcoreapp1.1\DAL.dll
+C:\Users\chengyi.tan\Desktop\Develop\myGitHub\TemplateOfNetCoreWebApi\TemplateOfNetCoreWebApi\bin\Debug\netcoreapp1.1\DAL.pdb
