@@ -8,7 +8,7 @@ using DAL;
 namespace DAL.Migrations
 {
     [DbContext(typeof(SchoolContext))]
-    [Migration("20170620094717_InitialCreate")]
+    [Migration("20170622065128_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

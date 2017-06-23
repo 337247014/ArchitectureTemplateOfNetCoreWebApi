@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.1",
-    "signature": "a86632d73edaac3157385ba1f16abe60808d77f6"
+    "signature": "646cfa9bef3dee1df30e548836f85511d5a2dcc3"
   },
   "compilationOptions": {},
   "targets": {
@@ -11,7 +11,8 @@
           "Microsoft.AspNetCore": "1.1.2",
           "Microsoft.EntityFrameworkCore": "1.1.2",
           "Microsoft.EntityFrameworkCore.Design": "1.1.2",
-          "Microsoft.EntityFrameworkCore.SqlServer": "1.1.2"
+          "Microsoft.EntityFrameworkCore.SqlServer": "1.1.2",
+          "Microsoft.EntityFrameworkCore.Tools": "1.1.1"
         },
         "runtime": {
           "DAL.dll": {}
@@ -242,6 +243,11 @@
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
+        }
+      },
+      "microsoft.entityframeworkcore.tools/1.1.1": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "1.1.2"
         }
       },
       "microsoft.extensions.caching.abstractions/1.1.1": {
@@ -719,6 +725,13 @@
       "sha512": "sha512-/PpnI2G7zitSAjCtDqVjElhKM3Gpxc+9Su6OhYqYavZS/Ouc/bNAWsoWEj/tbeYSGMUdZyjeAm9xKKJSF/h3Dw==",
       "path": "microsoft.entityframeworkcore.sqlserver/1.1.2",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.1.1.2.nupkg.sha512"
+    },
+    "microsoft.entityframeworkcore.tools/1.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jyR9NZ65iXoofso5oRQ5u5LsmocO9CzpX0WWf90em+l9dXsky2F/oDu63VNJ6leUg4c3Uwd7LO2KiNrl5QWIow==",
+      "path": "microsoft.entityframeworkcore.tools/1.1.1",
+      "hashPath": "microsoft.entityframeworkcore.tools.1.1.1.nupkg.sha512"
     },
     "microsoft.extensions.caching.abstractions/1.1.1": {
       "type": "package",

@@ -535,6 +535,18 @@
           "lib/netstandard1.3/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.Tools/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "1.1.2"
+        },
+        "compile": {
+          "lib/netstandard1.3/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/_._": {}
+        }
+      },
       "Microsoft.Extensions.Caching.Abstractions/1.1.1": {
         "type": "package",
         "dependencies": {
@@ -3705,6 +3717,30 @@
         "lib/netstandard1.3/Microsoft.EntityFrameworkCore.SqlServer.xml",
         "microsoft.entityframeworkcore.sqlserver.1.1.2.nupkg.sha512",
         "microsoft.entityframeworkcore.sqlserver.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Tools/1.1.1": {
+      "sha512": "jyR9NZ65iXoofso5oRQ5u5LsmocO9CzpX0WWf90em+l9dXsky2F/oDu63VNJ6leUg4c3Uwd7LO2KiNrl5QWIow==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.tools/1.1.1",
+      "files": [
+        "lib/net451/_._",
+        "lib/netstandard1.3/_._",
+        "microsoft.entityframeworkcore.tools.1.1.1.nupkg.sha512",
+        "microsoft.entityframeworkcore.tools.nuspec",
+        "tools/EntityFrameworkCore.PowerShell2.psd1",
+        "tools/EntityFrameworkCore.PowerShell2.psm1",
+        "tools/EntityFrameworkCore.psd1",
+        "tools/EntityFrameworkCore.psm1",
+        "tools/about_EntityFrameworkCore.help.txt",
+        "tools/init.ps1",
+        "tools/install.ps1",
+        "tools/net451/ef.exe",
+        "tools/net451/ef.exe.config",
+        "tools/net451/ef.x86.exe",
+        "tools/net451/ef.x86.exe.config",
+        "tools/netcoreapp1.0/ef.dll",
+        "tools/netcoreapp1.0/ef.runtimeconfig.json"
       ]
     },
     "Microsoft.Extensions.Caching.Abstractions/1.1.1": {
@@ -9156,6 +9192,7 @@
       "Microsoft.EntityFrameworkCore >= 1.1.2",
       "Microsoft.EntityFrameworkCore.Design >= 1.1.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 1.1.2",
+      "Microsoft.EntityFrameworkCore.Tools >= 1.1.1",
       "Microsoft.NETCore.App >= 1.1.2"
     ]
   },
@@ -9165,10 +9202,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\chengyi.tan\\Desktop\\Develop\\myGitHub\\TemplateOfNetCoreWebApi\\DAL\\DAL.csproj",
+      "projectUniqueName": "C:\\Users\\chengyi.tan\\Desktop\\Develop\\myGitHub\\Dotnet Core\\ArchitectureTemplateOfNetCoreWebApi\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "C:\\Users\\chengyi.tan\\Desktop\\Develop\\myGitHub\\TemplateOfNetCoreWebApi\\DAL\\DAL.csproj",
-      "outputPath": "C:\\Users\\chengyi.tan\\Desktop\\Develop\\myGitHub\\TemplateOfNetCoreWebApi\\DAL\\obj\\",
+      "projectPath": "C:\\Users\\chengyi.tan\\Desktop\\Develop\\myGitHub\\Dotnet Core\\ArchitectureTemplateOfNetCoreWebApi\\DAL\\DAL.csproj",
+      "outputPath": "C:\\Users\\chengyi.tan\\Desktop\\Develop\\myGitHub\\Dotnet Core\\ArchitectureTemplateOfNetCoreWebApi\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
@@ -9189,6 +9226,10 @@
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "1.1.2"
+          },
+          "Microsoft.EntityFrameworkCore.Tools": {
+            "target": "Package",
+            "version": "1.1.1"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "target": "Package",

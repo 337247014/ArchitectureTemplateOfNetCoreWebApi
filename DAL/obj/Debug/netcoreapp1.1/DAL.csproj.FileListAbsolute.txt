@@ -4,3 +4,10 @@ C:\Users\chengyi.tan\Desktop\Develop\myGitHub\TemplateOfNetCoreWebApi\DAL\obj\De
 C:\Users\chengyi.tan\Desktop\Develop\myGitHub\TemplateOfNetCoreWebApi\DAL\bin\Debug\netcoreapp1.1\DAL.pdb
 C:\Users\chengyi.tan\Desktop\Develop\myGitHub\TemplateOfNetCoreWebApi\DAL\obj\Debug\netcoreapp1.1\DAL.dll
 C:\Users\chengyi.tan\Desktop\Develop\myGitHub\TemplateOfNetCoreWebApi\DAL\obj\Debug\netcoreapp1.1\DAL.pdb
+C:\Users\chengyi.tan\Desktop\Develop\myGitHub\Dotnet Core\ArchitectureTemplateOfNetCoreWebApi\DAL\bin\Debug\netcoreapp1.1\DAL.deps.json
+C:\Users\chengyi.tan\Desktop\Develop\myGitHub\Dotnet Core\ArchitectureTemplateOfNetCoreWebApi\DAL\bin\Debug\netcoreapp1.1\DAL.dll
+C:\Users\chengyi.tan\Desktop\Develop\myGitHub\Dotnet Core\ArchitectureTemplateOfNetCoreWebApi\DAL\bin\Debug\netcoreapp1.1\DAL.pdb
+C:\Users\chengyi.tan\Desktop\Develop\myGitHub\Dotnet Core\ArchitectureTemplateOfNetCoreWebApi\DAL\obj\Debug\netcoreapp1.1\DAL.AssemblyInfo.cs
+C:\Users\chengyi.tan\Desktop\Develop\myGitHub\Dotnet Core\ArchitectureTemplateOfNetCoreWebApi\DAL\obj\Debug\netcoreapp1.1\DAL.dll
+C:\Users\chengyi.tan\Desktop\Develop\myGitHub\Dotnet Core\ArchitectureTemplateOfNetCoreWebApi\DAL\obj\Debug\netcoreapp1.1\DAL.pdb
+C:\Users\chengyi.tan\Desktop\Develop\myGitHub\Dotnet Core\ArchitectureTemplateOfNetCoreWebApi\DAL\obj\Debug\netcoreapp1.1\DAL.csprojResolveAssemblyReference.cache
