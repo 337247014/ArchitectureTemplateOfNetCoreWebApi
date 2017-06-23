@@ -1,0 +1,9 @@
+C:\Users\chengyi.tan\Desktop\Develop\myGitHub\Dotnet Core\ArchitectureTemplateOfNetCoreWebApi\BLL\bin\Debug\netcoreapp1.1\BLL.deps.json
+C:\Users\chengyi.tan\Desktop\Develop\myGitHub\Dotnet Core\ArchitectureTemplateOfNetCoreWebApi\BLL\bin\Debug\netcoreapp1.1\BLL.dll
+C:\Users\chengyi.tan\Desktop\Develop\myGitHub\Dotnet Core\ArchitectureTemplateOfNetCoreWebApi\BLL\bin\Debug\netcoreapp1.1\BLL.pdb
+C:\Users\chengyi.tan\Desktop\Develop\myGitHub\Dotnet Core\ArchitectureTemplateOfNetCoreWebApi\BLL\bin\Debug\netcoreapp1.1\DAL.dll
+C:\Users\chengyi.tan\Desktop\Develop\myGitHub\Dotnet Core\ArchitectureTemplateOfNetCoreWebApi\BLL\bin\Debug\netcoreapp1.1\DAL.pdb
+C:\Users\chengyi.tan\Desktop\Develop\myGitHub\Dotnet Core\ArchitectureTemplateOfNetCoreWebApi\BLL\obj\Debug\netcoreapp1.1\BLL.csprojResolveAssemblyReference.cache
+C:\Users\chengyi.tan\Desktop\Develop\myGitHub\Dotnet Core\ArchitectureTemplateOfNetCoreWebApi\BLL\obj\Debug\netcoreapp1.1\BLL.AssemblyInfo.cs
+C:\Users\chengyi.tan\Desktop\Develop\myGitHub\Dotnet Core\ArchitectureTemplateOfNetCoreWebApi\BLL\obj\Debug\netcoreapp1.1\BLL.dll
+C:\Users\chengyi.tan\Desktop\Develop\myGitHub\Dotnet Core\ArchitectureTemplateOfNetCoreWebApi\BLL\obj\Debug\netcoreapp1.1\BLL.pdb
