@@ -55,3 +55,5 @@ B. API project -- TemplateOfNetCoreWebApi
    (actually, if we use DBContext by DI,the DBContext will be same in controller)
    refer to :https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/advanced
 
+3. Add BLL project into Solution which includes all of services and DTOs(Data Transfer Object)
+

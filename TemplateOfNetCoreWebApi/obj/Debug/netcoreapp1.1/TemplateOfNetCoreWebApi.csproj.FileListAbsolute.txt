@@ -20,3 +20,5 @@ C:\Users\chengyi.tan\Desktop\Develop\myGitHub\Dotnet Core\ArchitectureTemplateOf
 C:\Users\chengyi.tan\Desktop\Develop\myGitHub\Dotnet Core\ArchitectureTemplateOfNetCoreWebApi\TemplateOfNetCoreWebApi\obj\Debug\netcoreapp1.1\TemplateOfNetCoreWebApi.AssemblyInfo.cs
 C:\Users\chengyi.tan\Desktop\Develop\myGitHub\Dotnet Core\ArchitectureTemplateOfNetCoreWebApi\TemplateOfNetCoreWebApi\obj\Debug\netcoreapp1.1\TemplateOfNetCoreWebApi.dll
 C:\Users\chengyi.tan\Desktop\Develop\myGitHub\Dotnet Core\ArchitectureTemplateOfNetCoreWebApi\TemplateOfNetCoreWebApi\obj\Debug\netcoreapp1.1\TemplateOfNetCoreWebApi.pdb
+C:\Users\chengyi.tan\Desktop\Develop\myGitHub\Dotnet Core\ArchitectureTemplateOfNetCoreWebApi\TemplateOfNetCoreWebApi\bin\Debug\netcoreapp1.1\BLL.dll
+C:\Users\chengyi.tan\Desktop\Develop\myGitHub\Dotnet Core\ArchitectureTemplateOfNetCoreWebApi\TemplateOfNetCoreWebApi\bin\Debug\netcoreapp1.1\BLL.pdb
