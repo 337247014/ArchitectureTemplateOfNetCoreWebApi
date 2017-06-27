@@ -11,7 +11,7 @@ namespace TemplateOfNetCoreWebApi.Controllers
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
-        //private UnitOfWork unitOfWork;
+        private UnitOfWork unitOfWork;
         private readonly SchoolContext _context;
         private IStudentService studentService;
         private ICourseService courceService;
@@ -22,10 +22,10 @@ namespace TemplateOfNetCoreWebApi.Controllers
         /// <param name="context"></param>
         public ValuesController(SchoolContext context)
         {
-            //unitOfWork = new UnitOfWork(context);
             _context = context;
-            studentService = new StudentService(context);
-            courceService = new CourseService(context);
+            unitOfWork = new UnitOfWork(context);
+            studentService = new StudentService(unitOfWork);
+            courceService = new CourseService(unitOfWork);
 
         }
 

@@ -1,4 +1,4 @@
-﻿1. how to migrations with EF Core
+﻿1. How to migrations with EF Core
 troubleshooting can refer to :http://www.cnblogs.com/soldout/p/EFCoreCodeFirstMigrationErrorHandle.html
 A. DAL
    a. add models,DBContext class(here is SchoolContext)
@@ -53,7 +53,31 @@ B. API project -- TemplateOfNetCoreWebApi
 2. Repository and Unit of work pattern
    add genericRepository.cs and UnitOfWork.cs into DAL project to make sure using same DBContext in Controller or service
    (actually, if we use DBContext by DI,the DBContext will be same in controller)
-   refer to :https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/advanced
+   refer to :
+   https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application
+   https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/advanced
 
 3. Add BLL project into Solution which includes all of services and DTOs(Data Transfer Object)
+
+4. Add Unit Test Project
+   using Moq and xUnit as the TDD(Test Drive Development) framework
+   Moq refer to:https://github.com/moq/moq4
+   xUnit: 
+   office site:https://xunit.github.io/docs/getting-started-dotnet-core.html
+   Introduction:https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-dotnet-test
+   other:http://www.cnblogs.com/gaochundong/p/mstest_nunit_xunit_comparisons.html
+
+   a. install xUnit package 
+      1. edit testproject.proj to add reference for xunit, then restore
+	  2. using Nuget to install
+   b. install Moq
+      using Nuget: Install-Package Moq
+   c. reference BLL project into Test Project.
+   d. create IUnitOfWork and IRepository so that We can mock them for test service
+      refer to:https://stackoverflow.com/questions/21847306/how-to-mock-repository-unit-of-work
+   e. related documents for introduce test concept
+      https://www.gaui.is/how-to-mock-the-datacontext-linq/
+	  https://www.gaui.is/isolating-your-bll-from-your-dal-and-unit-testing-it/
+   f. Demo or example
+      https://github.com/bpun/UnitTesingfor.NETCorewithXUnitAndMOQ
 

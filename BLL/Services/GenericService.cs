@@ -7,10 +7,10 @@ namespace BLL.Services
 {
     public class GenericService
     {
-        public UnitOfWork unitOfWork;
-        public GenericService(SchoolContext context)
+        public IUnitOfWork unitOfWork;
+        public GenericService(IUnitOfWork unitOfWork)
         {
-            unitOfWork = new UnitOfWork(context);
+            this.unitOfWork = unitOfWork;
         }
 
     }

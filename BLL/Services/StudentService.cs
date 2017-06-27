@@ -8,7 +8,7 @@ namespace BLL.Services
 {
     public class StudentService : GenericService, IStudentService
     {
-        public StudentService(SchoolContext context) : base(context)
+        public StudentService(IUnitOfWork unitOfWork) : base(unitOfWork)
         {
         }
 
