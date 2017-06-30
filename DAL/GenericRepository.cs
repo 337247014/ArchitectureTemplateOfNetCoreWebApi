@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DAL
 {
-    public class GenericRepository<TEntity> where TEntity : class
+    public class GenericRepository<TEntity> : IRepository<TEntity> where TEntity : class
     {
         internal SchoolContext context;
         internal DbSet<TEntity> dbSet;
@@ -46,9 +46,14 @@ namespace DAL
             }
         }
 
+        public virtual IQueryable<TEntity> GetAll()
+        {
+            return dbSet.AsNoTracking().AsQueryable();
+        }
+
         public virtual TEntity GetByID(object id)
         {
-            return dbSet.Find(id);
+            return dbSet.Find(id); 
         }
 
         public virtual void Insert(TEntity entity)

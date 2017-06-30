@@ -10,18 +10,18 @@ namespace DAL
     /// they share a single database context. That way, when a unit of work is complete you can call the 
     /// SaveChanges method on that instance of the context and be assured that all related changes will be coordinated.
     /// </summary>
-    public class UnitOfWork : IDisposable
+    public class UnitOfWork : IUnitOfWork
     {
         private SchoolContext context;
-        private GenericRepository<Student> studentRepository;
-        private GenericRepository<Course> courseRepository;
-        private GenericRepository<Enrollment> enrollmentRepository;
+        private IRepository<Student> studentRepository;
+        private IRepository<Course> courseRepository;
+        private IRepository<Enrollment> enrollmentRepository;
 
         public UnitOfWork(SchoolContext context)
         {
             this.context = context;
         }
-        public GenericRepository<Student> StudentRepository
+        public IRepository<Student> StudentRepository
         {
             get
             {
@@ -33,7 +33,7 @@ namespace DAL
             }
         }
 
-        public GenericRepository<Course> CourseRepository
+        public IRepository<Course> CourseRepository
         {
             get
             {
@@ -45,7 +45,7 @@ namespace DAL
             }
         }
 
-        public GenericRepository<Enrollment> EnrollmentRepository
+        public IRepository<Enrollment> EnrollmentRepository
         {
             get
             {
