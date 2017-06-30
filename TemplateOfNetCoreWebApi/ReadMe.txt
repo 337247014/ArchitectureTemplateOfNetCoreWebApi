@@ -79,5 +79,8 @@ B. API project -- TemplateOfNetCoreWebApi
       https://www.gaui.is/how-to-mock-the-datacontext-linq/
 	  https://www.gaui.is/isolating-your-bll-from-your-dal-and-unit-testing-it/
    f. Demo or example
+      http://www.punbharat.com.np/unit-testing-for-net-core-mvc-with-xunit-and-moq/
       https://github.com/bpun/UnitTesingfor.NETCorewithXUnitAndMOQ
+   g. run test 
+      Test -> Run -> All Tests (or Ctrl R + A) in visual studio
 

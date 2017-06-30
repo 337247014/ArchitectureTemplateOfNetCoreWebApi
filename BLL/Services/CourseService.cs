@@ -12,7 +12,7 @@ namespace BLL.Services
         {
         }
 
-        public CourseDto GetCourseById(int id)
+        public virtual CourseDto GetCourseById(int id)
         {
             var course = unitOfWork.CourseRepository.GetByID(id);
             return new CourseDto() { Title = course.Title };

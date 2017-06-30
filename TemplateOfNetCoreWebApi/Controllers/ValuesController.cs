@@ -11,10 +11,10 @@ namespace TemplateOfNetCoreWebApi.Controllers
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
-        private UnitOfWork unitOfWork;
+        private IUnitOfWork unitOfWork;
         private readonly SchoolContext _context;
-        private IStudentService studentService;
-        private ICourseService courceService;
+        public IStudentService studentService;
+        public ICourseService courceService;
 
         /// <summary>
         /// default get DBContext by constructor because of using DI DBContext in startup.cs configure 
@@ -23,7 +23,7 @@ namespace TemplateOfNetCoreWebApi.Controllers
         public ValuesController(SchoolContext context)
         {
             _context = context;
-            unitOfWork = new UnitOfWork(context);
+            unitOfWork = new UnitOfWork(_context);
             studentService = new StudentService(unitOfWork);
             courceService = new CourseService(unitOfWork);
 

@@ -6,6 +6,7 @@ namespace DAL
 {
     public class SchoolContext : DbContext
     {
+        public SchoolContext() { }
         public SchoolContext(DbContextOptions<SchoolContext> options) : base(options)
         {
         }
