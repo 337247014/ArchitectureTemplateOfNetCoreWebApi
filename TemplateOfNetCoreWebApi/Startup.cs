@@ -9,6 +9,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore;
+using Microsoft.AspNetCore.Rewrite;
 
 namespace TemplateOfNetCoreWebApi
 {
@@ -30,6 +33,13 @@ namespace TemplateOfNetCoreWebApi
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
+
+            //Enable SSL globally
+            services.Configure<MvcOptions>(options =>
+            {
+                options.Filters.Add(new RequireHttpsAttribute());
+            });
+            //add DbContext
             services.AddDbContext<SchoolContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddMvc();
         }
@@ -40,6 +50,10 @@ namespace TemplateOfNetCoreWebApi
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+
+            //redirect all http request to Https 
+            var options = new RewriteOptions().AddRedirectToHttps();
+            app.UseRewriter(options);
 
             app.UseMvc();
 

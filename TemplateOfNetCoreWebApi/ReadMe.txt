@@ -1,6 +1,6 @@
 ﻿1. How to migrations with EF Core
-troubleshooting can refer to :http://www.cnblogs.com/soldout/p/EFCoreCodeFirstMigrationErrorHandle.html
-A. DAL
+ troubleshooting can refer to :http://www.cnblogs.com/soldout/p/EFCoreCodeFirstMigrationErrorHandle.html
+  A. DAL
    a. add models,DBContext class(here is SchoolContext)
 
    b.package manager console -- install dependency for EF
@@ -36,7 +36,7 @@ A. DAL
    f. remove the last migration
    Remove-Migration -s 
 
-B. API project -- TemplateOfNetCoreWebApi
+ B. API project -- TemplateOfNetCoreWebApi
    a. reference DAL project
 
    b.package manager console -- install dependency for EF
@@ -83,4 +83,17 @@ B. API project -- TemplateOfNetCoreWebApi
       https://github.com/bpun/UnitTesingfor.NETCorewithXUnitAndMOQ
    g. run test 
       Test -> Run -> All Tests (or Ctrl R + A) in visual studio
+
+   Note: [TODO] add specflow test project for solution
+
+5.Security
+  A.Enable SSL for .net core web api
+    refer to:https://docs.microsoft.com/en-us/aspnet/core/security/enforcing-ssl
+	we can enable ssl on three level (globlly,controller and action), globlly is the best practice.
+	a. enable ssl in configureService (using RequireHttpsAttribute in globlly, [RequireHttps] to controllers )
+	b. redirect all http request to https
+	   need to install Microsoft.AspNetCore.Rewrite by Nuget, command as below
+	   Install-Package Microsoft.AspNetCore.Rewrite -Version 1.0.2
+	c. set up iis express for ssl/https on the project
+    
 
