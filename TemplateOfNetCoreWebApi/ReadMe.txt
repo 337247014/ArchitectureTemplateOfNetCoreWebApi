@@ -95,5 +95,63 @@
 	   need to install Microsoft.AspNetCore.Rewrite by Nuget, command as below
 	   Install-Package Microsoft.AspNetCore.Rewrite -Version 1.0.2
 	c. set up iis express for ssl/https on the project
+
+  B.Enable Cors (Cross Origin Requests)
+    refer to: https://docs.microsoft.com/en-us/aspnet/core/security/cors
+	a. install package for Cors by nuget
+	   Install-Package Microsoft.AspNetCore.Cors
+	b. in startup.cs ConfigureServices method setting up Cors
+	   Services.AddCors()
+	   Meanwhile, we can config cors globally using CorsAuthorizationFilterFactory class or [EnableCors] for controller or action
+	   the precedence order is: Action-level > controller level > globally level
+	c. in startup.cs Congigure method enable Cors
+	   app.UseCors()
+	d. disable cors for controller or action
+	   we can use [DisableCors] attribute to disable cors
+
+	Note: How cors work 
+	precondition: 
+	Browser security prevents a web page from making AJAX requests to another domain. 
+	This restriction is called the same-origin policy, but sometimes you might want to let other sites make cross-origin requests to your web API.
+
+	a.If a browser supports CORS, it sets these headers automatically for cross-origin requests; you don’t need to do anything special in your JavaScript code.
+	The "Origin" header gives the domain of the site that is making the request: like below
+GET http://myservice.azurewebsites.net/api/test HTTP/1.1
+Referer: http://myclient.azurewebsites.net/
+Accept: */*
+Accept-Language: en-US
+Origin: http://myclient.azurewebsites.net <<--
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0)
+Host: myservice.azurewebsites.net
+    
+	b.If the server allows the request, it sets the Access-Control-Allow-Origin header. 
+	The value of this header either matches the Origin header, or is the wildcard value "*", meaning that any origin is allowed.:
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Type: text/plain; charset=utf-8
+Access-Control-Allow-Origin: http://myclient.azurewebsites.net <<--
+Date: Wed, 20 May 2015 06:27:30 GMT
+Content-Length: 12
+Test message
+    
+	If the response does not include the Access-Control-Allow-Origin header, the AJAX request fails.
+
+	C.Preventing Cross-Site Scripting(XSS)
+	  mainly using Encoding way to prevent XSS, especially for input or output in front end.
+	  at the same time, validation is also best practice for XSS, such as an number input should add 0-9 validation in case other characters inputed.
+
+	D.Preventing Cross-Site Request Forgery(CSRF)
+	  refer to:https://docs.microsoft.com/en-us/aspnet/core/security/anti-request-forgery
+	  using [ValidateAntiForgeryToken] attribute for controller or action
+
+
+
+
+
+
+
+
     
 

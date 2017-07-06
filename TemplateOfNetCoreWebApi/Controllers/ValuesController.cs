@@ -4,11 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using BLL.Services;
 using DAL;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace TemplateOfNetCoreWebApi.Controllers
 {
     [Route("api/[controller]")]
+    [EnableCors("AllowSpecificOrigin")]
+    [ValidateAntiForgeryToken]
     public class ValuesController : Controller
     {
         private IUnitOfWork unitOfWork;
